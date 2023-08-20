@@ -16,3 +16,7 @@ Now we will construct the permutation with the minimum absolute difference of co
 . It's easy to see that the minimum absolute difference of consecutive elements equals to x−1
 .
 */
+/*
+. we can make any integer using 2,3(except 0,1)
+. With any positive integer x, there is at least one square number in [x,2x]
+*/
