@@ -43,3 +43,26 @@ if(count)zeros.pb(count);
         for(int i=1;i<n;i++){
         if(s[i]!=s[i-1])count++;
     }
+
+
+//storing count in map even if same element comes after few
+    map<int,int>mp;
+    int c=1;
+    for(int i=1;i<n;i++){
+        if(a[i]==a[i-1])c++;
+        else{
+            if(mp[a[i-1]]){
+                int mx=mp[a[i-1]];
+                mp[a[i-1]]=max(mx,c);
+            }
+            else mp[a[i-1]]=c;
+            c=1;
+        }
+    }
+    if(mp[a[n-1]]){
+        int mx=mp[a[n-1]];
+        mp[a[n-1]]=max(mx,c);
+    }
+    else mp[a[n-1]]=c;
+    // for(auto x:mp)cout<<x.fi<<" "<<x.se<<endl;
+    // cout<<endl;
