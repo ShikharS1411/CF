@@ -66,3 +66,25 @@ if(count)zeros.pb(count);
     else mp[a[n-1]]=c;
     // for(auto x:mp)cout<<x.fi<<" "<<x.se<<endl;
     // cout<<endl;
+
+//if storing the elements a well no need to do the check as we'll pus a[i-1]th element only thus at then end no matter what push(a.back()) as well 
+//eg
+    int n;cin>>n;
+    vector<int>a(n);
+    for(auto &x:a)cin>>x;
+    //jbtk same rhega chalao
+    map<int,int>mp;
+    int c=1;
+    vector<pair<int,int>>vp1;
+    for(int i=1;i<n;i++){
+        if(a[i]==a[i-1])c++;
+        else{
+            vp1.pb({c,a[i-1]});
+            mp[a[i-1]]++;
+            c++;
+        }
+    }
+    // if(mp.find(a.back())==mp.end())vp1.pb({c,a.back()});
+    vp1.pb({c,a.back()});
+    for(auto x:vp1)cout<<x.fi<<" "<<x.se<<endl;
+    cout<<endl;
