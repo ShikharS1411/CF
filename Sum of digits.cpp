@@ -11,3 +11,4 @@
         }
         return sum;
     }
+    //to convert any int value to ll just val*1ll
