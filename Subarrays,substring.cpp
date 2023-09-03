@@ -18,3 +18,4 @@ for(int i=0;i<a.size();i++){
         }
     }
 }
+//array elements in all subarrays form a triangle curve as mid as most occ 1st and last as min occurence elements
