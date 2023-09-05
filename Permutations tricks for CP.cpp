@@ -19,6 +19,5 @@ Now we will construct the permutation with the minimum absolute difference of co
 /*
 . we can make any integer using 2,3(except 0,1)
 . With any positive integer x, there is at least one square number in [x,2x]
-. if "want/computed" value +gaps > n then we cant fill those gaps with our want value
 .There is atleast one prime number between the interval [n , 3n/2];
 */
