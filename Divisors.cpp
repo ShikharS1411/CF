@@ -12,3 +12,11 @@ void getdiv(int n,vector<int>&a){
 		}
 	}
 }
+
+for(ll i=2;i*i<=x;i++){
+	  while(x%i==0){
+	    x/=i;
+    	mp[i]++;
+	} 
+}
+if(x>1)mp[x]++;
