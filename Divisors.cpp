@@ -21,3 +21,13 @@ for(ll i=2;i*i<=x;i++){
 	} 
 }
 if(x>1)mp[x]++;
+
+    for(int i=l;i<=r;i++){
+        //getdivisors
+        for(int j=2;j*j<=i;j++){
+            if(i%j==0){
+                cout<<j<<" "<<i-j<<endl;
+                return;
+            }
+        }
+    }
