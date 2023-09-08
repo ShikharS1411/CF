@@ -4,7 +4,7 @@
     vector<int>is_prime(range+5,true);
     is_prime[0]=false;
     is_prime[1]=false;
-    //0,1 are not prime
+    //0,1 are not prime neither composite
     for( ll i=2;i<range+5;i++){
         if(is_prime[i]==true){
             for(ll j=2*i;j<range+5;j+=i){
