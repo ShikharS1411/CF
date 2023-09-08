@@ -6,7 +6,6 @@ using namespace std;
 #define no cout<<"NO"<<endl;
 #define pb push_back
 #define ppb pop_back
-#define MP make_pair
 #define fi first
 #define se second
 const ll mod = 1e9 + 7;
@@ -18,6 +17,8 @@ void solve(){
     
 }
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     ll t;
     cin>>t;
     while(t--){
