@@ -13,6 +13,7 @@ void getdiv(int n,vector<int>&a){
 	}
 }
 
+//prime factorisation
 for(ll i=2;i*i<=x;i++){
 	  while(x%i==0){
 	    x/=i;
