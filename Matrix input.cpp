@@ -5,6 +5,6 @@
         ll k;cin>>k;//col size
         for(ll j=0;j<k;j++){
             ll x;cin>>x;
-            a[i].pb(x);
+            a[i].pb(x);//cant push vectore
         }
     }
