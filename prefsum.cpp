@@ -3,4 +3,4 @@
         pref[i+1]=pref[i]+a[i];
     }
     //to get ranged sum
-    pref[r+1]-pref[l];
+    sum=pref[r+1]-pref[l];
