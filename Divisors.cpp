@@ -1,17 +1,17 @@
 /*
 . only perfect squares have odd no of divisors(including 1),else all have even
 */
-void getdiv(int n,vector<int>&a){
-	for (int i=1;i*i<=n;i++){
-		if(n%i==0){
-			if(n/i==i)a.pb(i);
-            else{
-                a.pb(i);
-                a.pb(n/i);
-            }
-		}
-	}
-}
+//divisors for no a[i]
+		for(ll i=0;i<n;i++){
+			ll temp=a[i];
+			for(ll j=2;j*j<=a[i];j++){
+				while(temp%j==0){
+					mp[j]++;
+					temp/=j;
+				}
+			}
+			if (temp!=1)mp[temp]++;
+        }
 
 //prime factorisation
 for(ll i=2;i*i<=x;i++){
