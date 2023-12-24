@@ -19,3 +19,9 @@ for(int i=0;i<a.size();i++){
     }
 }
 //array elements in all subarrays form a triangle curve as mid as most occ 1st and last as min occurence elements
+
+//Max occurence of an element for in all subarrays is of mid element and least is of corner elenments
+//just like a bell curve of occurrences
+
+//all subarray sum formula in O(n)
+    for(int i=0;i<n;i++)sum+=(a[i]*(i+1)*(n-i));
