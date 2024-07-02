@@ -1,4 +1,4 @@
-//an matrix would be given jisme konsi node kha connect h wo
+//a matrix would be given jisme konsi node kha connect h wo
 //n->number of node would be given
 //take aj list as a map :)
 vector<int>adj[n];
